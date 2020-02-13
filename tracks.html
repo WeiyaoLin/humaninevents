@@ -1,0 +1,156 @@
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Human in Events</title>
+    <link rel="stylesheet" href="./static/font_866081_cwx5tus43ws.css">
+    <link rel="stylesheet" type="text/css" href="./static/index.css">
+    <link href="./static/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./static/bootstrap.min.css">
+</head>
+
+<body>
+<div class="top-banner">
+    <div class="container">
+        <h1>Challenge on Large-scale Human-centric</h1>
+        <h1>Video Analysis in Complex Events</h1>
+    </div>
+</div>
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="./index.html">HOME</a></li>
+                <li class="dropdown">
+                    <a href="./index.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">DATA <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="./data.html?title=1">mot2018</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="./index.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">RESULT <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="./oltp.html?title=1">mot2018</a></li>
+                    </ul>
+                </li>
+                <li><a href="./tracks.html">TRACKS</a></li>
+                <li><a href="./faq.html">FAQ</a></li>
+                <li><a href="./people.html">PEOPLE</a></li>
+            </ul>
+
+                        <ul class="nav navbar-nav navbar-right">
+
+                <li><a href="./login">Login</a></li>
+                <li><a href="./register">Register</a></li>
+            </ul>
+                    </div>
+        <!-- /.nav-collapse -->
+    </div>
+</nav>
+
+<style type="text/css">
+h5 {
+  font-size: 20px;
+  font-weight: bold;
+}
+</style>
+<div class="container">
+  <div class="section">
+  <h4>Track-1: Multi-person Motion Tracking in Complex Events</h4>
+  <div class="content"><p>
+      This track is proposed to estimate the location and corresponding trajectory of each identity
+      throughout a video. For the human detection and tracking annotation, we assign a bounding-box
+      and an ID that is unique throughout the video range to each person in each frame. Compared with
+      MOT challenge series, this track contains longer average trajectory length, bringing more difficulty
+      for human tracking tasks. Both of our dataset and MOT19 contain more crowded human frames
+      with large overlap and occlusion, but MOT19 only contains 3 limited scenes. In contrast, our
+      dataset captures videos on 30+ different scenarios including subway station, street, and dining hall,
+      making the tracking problem a more challenging task.
+    </p>
+    <h5>Dataset Description</h5>
+    <p>
+      In this track, the bounding box and ID of pedestrians are annotated, like MOT. Annotation is performed per frame.
+    </p>
+    <h5>Submission Format</h5>
+    <p>
+
+    </p>
+    <h5>Evaluation Metrics</h5>
+    <p>
+      <u><b>MOTA and MOTP</b></u>. MOTA measures the ratio of false positive, missing target and identity switch. MOTP measures
+      the trajectory similarity between predicted results and ground-truth.
+    </p>
+  </div></div>
+
+  <div class="section">
+  <h4>Track-2: Crowd Pose Estimation & Tracking in Complex Events</h4>
+  <div class="content"><p>
+      This task aims at estimating human poses on each frame and associating keypoints of the same
+      identity across frames. Compared with PoseTrack, our dataset is much larger in scale and includes
+      more frequent occlusions. On the other hand, our dataset involves more real-scene pose patterns
+      in various complex events, which is distinctly different from other mainstream pose datasets such
+      as MSCOCO or MPII.
+    </p>
+    <h5>Dataset Description</h5>
+    <p>
+      In this track, the skeleton keypoints and skeleton's ID of pedestrians are annotated. Annotation is performed per frame.
+    </p>
+    <h5>Submission Format</h5>
+    <p>
+
+    </p>
+    <h5>Evaluation Metrics</h5>
+    <p>
+      <u><b>MOTA and MOTP</b></u>. MOTA measures the ratio of false positive, missing target and identity switch. MOTP measures
+      the trajectory similarity between predicted results and ground-truth. <br>
+      <u><b>AP</b></u> is a widely used metric for keypoint estimation. If a predicted pose proposal has the highest
+      PCKh (Percentage of Correct Keypoints) with a certain ground-truth, then it is taken as true
+      positive, otherwise it is regarded as false positive, the AP value is the area under the precisionrecall
+      curve.
+    </p>
+  </div></div>
+
+  <div class="section">
+  <h4>Track-3: Person-level Action Recognition in Complex Events</h4>
+  <div class="content"><p>
+      The action recognition task requires participants to predict an action label for each individual
+      in labeled frames. In our dataset, we annotate actions of all individuals in every 20 frames in a
+      video. For group actions, we assign the action label to each group member involved in this event.
+      In total, we defined 15 action categories. Compared with the other action recognition datasets
+      such as UCF-Crime, our challenge considers action types under different outdoor/indoor scenes
+      and involves a variety of event types.
+    </p>
+    <h5>Dataset Description</h5>
+    <p>
+      In this track, annotation includes bounding box and class of action of pedestrians. Annotation is performed every 20 frames.
+    </p>
+    <h5>Submission Format</h5>
+    <p>
+
+    </p>
+    <h5>Evaluation Metrics</h5>
+    <p>
+      <u><b>frame-mAP</b></u> is a common metric to evaluate spatial action detection accuracy on single frame.
+      To be specific, each prediction consists of a bounding box and a predicted action label, if it has
+      overlap larger than 0.5 with a unmatched ground-truth box of the same label, then it is taken as
+      true positive, otherwise it is false positive. This process is conducted on each frame annotated
+      with action boxes. The AP value is computed for each label as the area under the precision-recall
+      curve and the mean AP value is computed by averaging the AP value of each class.
+    </p>
+  </div></div>
+</div>
+
+
+<footer>
+    <a href="http://en.sjtu.edu.cn/"> <img src="./img/logo2.png" alt="" /> </a>
+    <a href="https://www.huawei.com"> <img src="./img/huawei_logo.png" alt="" /> </a>
+    <a href="http://www.pcl.edu.cn/"> <img src="./img/pcl_logo.png" alt="" style="background:#1067bf;" /> </a>
+    <a href="http://www.boyunvision.com"> <img src="./img/logo3.png" alt="" /> </a>
+</footer>
+
+<script src="./static/jquery.min.js"></script>
+<script src="./static/bootstrap.min.js"></script>
+<script src="./static/index.js"></script>
+
+
+</body></html>
