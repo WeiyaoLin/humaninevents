@@ -42,17 +42,48 @@
 
                         <ul class="nav navbar-nav navbar-right">
 
-                <li><a href="./login.html">Login</a></li>
-                <li><a href="./register.html">Register</a></li>
+                <li><a href="./login">Login</a></li>
+                <li><a href="./register">Register</a></li>
             </ul>
                     </div>
         <!-- /.nav-collapse -->
     </div>
 </nav>
 
-
 <div class="container">
-  Nothing now
+    <h3 class="title"></h3>
+    <div class="Track1">
+        <table class="table table-hover table-striped ">
+            <thead >
+            <tr>
+                <th>Tracker</th>
+                <th>name</th>
+                <th>create_time</th>
+                {{--<th>MOTA</th>--}}
+                {{--<th>MOTP</th>--}}
+                @foreach($data['challenge'] as $title)
+                    @if($data['id'] == $title->id)
+                    <?php  $titles =  explode(',',$title->metrics); ?>
+                        @foreach($titles as $ts)
+                        <th>{{$ts}}</th>
+                        @endforeach
+                    @endif
+                @endforeach
+            </tr>
+            </thead>
+            <tbody>
+            @foreach($data['data'] as $list)
+                <tr>
+                    <td><a href="./tracker.html?tracker=1&id={{$list->id}}">tracker1</a></td>
+                    <td>{{$list->name}}</td>
+                    <td>{{date('Y-m-d H:i:s',$list->create_time)}}</td>
+                    <td>{{$list->MOTA}}</td>
+                    <td>{{$list->MOTP}}</td>
+                </tr>
+            @endforeach
+            </tbody>
+        </table>
+    </div>
 </div>
 
 <footer>

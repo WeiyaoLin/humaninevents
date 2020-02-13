@@ -1,0 +1,456 @@
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Human in Events</title>
+    <link rel="stylesheet" href="./static/font_866081_cwx5tus43ws.css">
+    <link rel="stylesheet" type="text/css" href="./static/index.css">
+    <link href="./static/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./static/bootstrap.min.css">
+</head>
+
+<body>
+<div class="top-banner">
+    <div class="container">
+        <h1>Challenge on Large-scale Human-centric</h1>
+        <h1>Video Analysis in Complex Events</h1>
+    </div>
+</div>
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="./index.html">HOME</a></li>
+                <li class="dropdown">
+                    <a href="./index.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">DATA <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="./data.html?title=1">Human in Events</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="./index.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">RESULT <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="./track-1.html?title=1">Track-1:Multi-person Motion Tracking</a></li>
+              	      <li><a href="./track-2.html?title=1">Track-2:Crowd Pose Estimation & Tracking</a></li>
+              	      <li><a href="./track-3.html?title=1">Track-3:Person-level Action Recognition</a></li>
+                    </ul>
+                </li>
+                <li><a href="./tracks.html">TRACKS</a></li>
+                <li><a href="./faq.html">FAQ</a></li>
+                <li><a href="./people.html">PEOPLE</a></li>
+            </ul>
+
+                        <ul class="nav navbar-nav navbar-right">
+
+                <li><a href="./login">Login</a></li>
+                <li><a href="./register">Register</a></li>
+            </ul>
+                    </div>
+        <!-- /.nav-collapse -->
+    </div>
+</nav>
+
+<div class="container">
+    <h3 class="title"></h3>
+    <div class="training set">
+        <h4>Training Set</h4>
+        <table class="table table-hover table-striped ">
+            <thead >
+            <tr>
+                <th>Sample</th>
+                <th>Name</th>
+                <th>FPS</th>
+                <th>Resolution</th>
+                <th>Length</th>
+                <th>Tracks</th>
+                <th>Boxes</th>
+                <th>Poses</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            <tr>
+                <td><img width="150" height="112" src="img/train/1.jpg" alt="" /></td>
+                <td>1</td>
+                <td>25</td>
+                <td>640x300</td>
+	<td>01:12</td>
+                <td>23</td>
+                <td>14466</td>
+                <td>14735</td>
+            </tr>
+
+            <tr>
+                <td><img width="150" height="112" src="img/train/another_view2.jpg" alt="" /></td>
+                <td>accident2</td>
+                <td>30</td>
+                <td>1280x720</td>
+	<td>02:40</td>
+                <td>14</td>
+                <td>50752</td>
+                <td>49694</td>
+            </tr>
+
+            <tr>
+                <td><img width="150" height="112" src="img/train/busdoor.jpg" alt="" /></td>
+                <td>busdoor</td>
+                <td>24</td>
+                <td>352x258</td>
+	<td>00:20</td>
+                <td>30</td>
+                <td>4996</td>
+                <td>4996</td>
+            </tr>
+
+            <tr>
+                <td><img width="150" height="112" src="img/train/dining_hall2.jpg" alt="" /></td>
+                <td>dining_hall2</td>
+                <td>30</td>
+                <td>1660x1080</td>
+	<td>00:31</td>
+                <td>85</td>
+                <td>56497</td>
+                <td>56497</td>
+            </tr>
+
+            <tr>
+                <td><img width="150" height="112" src="img/train/earthquake.jpg" alt="" /></td>
+                <td>earthquake</td>
+                <td>25</td>
+                <td>1280x720</td>
+	<td>01:26</td>
+                <td>113</td>
+                <td>111343</td>
+                <td>55971</td>
+            </tr>
+
+            <tr>
+                <td><img width="150" height="112" src="img/train/fight.jpg" alt="" /></td>
+                <td>fight</td>
+                <td>25</td>
+                <td>1280x720</td>
+	<td>02:28</td>
+                <td>11</td>
+                <td>28029</td>
+                <td>28041</td>
+            </tr>
+
+            <tr>
+                <td><img width="150" height="112" src="img/train/five_mall.jpg" alt="" /></td>
+                <td>five_mall</td>
+                <td>30</td>
+                <td>1920x1080</td>
+	<td>00:30</td>
+                <td>44</td>
+                <td>30104</td>
+                <td>30104</td>
+            </tr>
+
+            <tr>
+                <td><img width="150" height="112" src="img/train/IMG_5297.jpg" alt="" /></td>
+                <td>IMG_5297</td>
+                <td>30</td>
+                <td>1920x1080</td>
+	<td>01:00</td>
+                <td>98</td>
+                <td>105730</td>
+                <td>100692</td>
+            </tr>
+
+            <tr>
+                <td><img width="150" height="112" src="img/train/jail.jpg" alt="" /></td>
+                <td>jail</td>
+                <td>15</td>
+                <td>1120x712</td>
+	<td>00:46</td>
+                <td>56</td>
+                <td>21600</td>
+                <td>18722</td>
+            </tr>
+
+            <tr>
+                <td><img width="150" height="112" src="img/train/kindergarten.jpg" alt="" /></td>
+                <td>kindergarten</td>
+                <td>25</td>
+                <td>640x344</td>
+	<td>02:12</td>
+                <td>113</td>
+                <td>48618</td>
+                <td>23254</td>
+            </tr>
+
+            <tr>
+                <td><img width="150" height="112" src="img/train/mall_2.jpg" alt="" /></td>
+                <td>mall_2</td>
+                <td>30</td>
+                <td>1280x720</td>
+	<td>00:07</td>
+                <td>74</td>
+                <td>9168</td>
+                <td>9168</td>
+            </tr>
+
+            <tr>
+                <td><img width="150" height="112" src="img/train/mall_escalator.jpg" alt="" /></td>
+                <td>mall_escalator</td>
+                <td>30</td>
+                <td>1280x720</td>
+	<td>00:18</td>
+                <td>57</td>
+                <td>23160</td>
+                <td>23160</td>
+            </tr>
+
+            <tr>
+                <td><img width="150" height="112" src="img/train/playground.jpg" alt="" /></td>
+                <td>playground</td>
+                <td>25</td>
+                <td>1920x1080</td>
+	<td>00:56</td>
+                <td>29</td>
+                <td>26438</td>
+                <td>26396</td>
+            </tr>
+
+            <tr>
+                <td><img width="150" height="112" src="img/train/primary_school.jpg" alt="" /></td>
+                <td>primary_school</td>
+                <td>24</td>
+                <td>1280x720</td>
+	<td>01:02</td>
+                <td>83</td>
+                <td>30392</td>
+                <td>30376</td>
+            </tr>
+
+            <tr>
+                <td><img width="150" height="112" src="img/train/prisonerattack.jpg" alt="" /></td>
+                <td>prisonerattack</td>
+                <td>25</td>
+                <td>1280x720</td>
+	<td>00:19</td>
+                <td>8</td>
+                <td>2877</td>
+                <td>2877</td>
+            </tr>
+
+            <tr>
+                <td><img width="150" height="112" src="img/train/road.jpg" alt="" /></td>
+                <td>road</td>
+                <td>15</td>
+                <td>1920x1080</td>
+	<td>00:46</td>
+                <td>331</td>
+                <td>45524</td>
+                <td>19741</td>
+            </tr>
+
+            <tr>
+                <td><img width="150" height="112" src="img/train/south_square1.jpg" alt="" /></td>
+                <td>south_square1</td>
+                <td>30</td>
+                <td>1280x720</td>
+	<td>00:32</td>
+                <td>260</td>
+                <td>43083</td>
+                <td>13733</td>
+            </tr>
+
+            <tr>
+                <td><img width="150" height="112" src="img/train/stair.jpg" alt="" /></td>
+                <td>stair</td>
+                <td>20</td>
+                <td>1280x720</td>
+	<td>01:20</td>
+                <td>214</td>
+                <td>49799</td>
+                <td>49799</td>
+            </tr>
+
+            <tr>
+                <td><img width="150" height="112" src="img/train/videoplayback.jpg" alt="" /></td>
+                <td>videoplayback</td>
+                <td>30</td>
+                <td>640x360</td>
+	<td>01:42</td>
+                <td>33</td>
+                <td>38406</td>
+                <td>38406</td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="test set">
+        <h4>Test Set</h4>
+        <table class="table table-hover table-striped ">
+            <thead >
+            <tr>
+                <th>Sample</th>
+                <th>Name</th>
+                <th>FPS</th>
+                <th>Resolution</th>
+                <th>Length</th>
+                <th>Tracks</th>
+                <th>Boxes</th>
+                <th>Poses</th>
+            </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td><img width="150" height="112" src="img/test/accident2.jpg" alt="" /></td>
+                    <td>accident2</td>
+                    <td>25</td>
+                    <td>624x360</td>
+	    <td>00:30</td>
+                    <td>25</td>
+                    <td>11100</td>
+                    <td>11100</td>
+                </tr>
+
+                <tr>
+                    <td><img width="150" height="112" src="img/test/another_view3.jpg" alt="" /></td>
+                    <td>another_view3</td>
+                    <td>30</td>
+                    <td>1280x720</td>
+	    <td>01:25</td>
+                    <td>14</td>
+                    <td>22399</td>
+                    <td>22177</td>
+                </tr>
+
+                <tr>
+                    <td><img width="150" height="112" src="img/test/dining_hall3.jpg" alt="" /></td>
+                    <td>dining_hall3</td>
+                    <td>30</td>
+                    <td>1920x1280</td>
+	    <td>00:23</td>
+                    <td>103</td>
+                    <td>48608</td>
+                    <td>32932</td>
+                </tr>
+
+                <tr>
+                    <td><img width="150" height="112" src="img/test/domestic_arrival.jpg" alt="" /></td>
+                    <td>domestic_arrival</td>
+                    <td>25</td>
+                    <td>1280x720</td>
+	    <td>00:57</td>
+                    <td>91</td>
+                    <td>53748</td>
+                    <td>46403</td>
+                </tr>
+
+                <tr>
+                    <td><img width="150" height="112" src="img/test/fight2.jpg" alt="" /></td>
+                    <td>fight2</td>
+                    <td>30</td>
+                    <td>456x344</td>
+	    <td>00:56</td>
+                    <td>17</td>
+                    <td>18602</td>
+                    <td>18602</td>
+                </tr>
+
+                <tr>
+                    <td><img width="150" height="112" src="img/test/mall.jpg" alt="" /></td>
+                    <td>mall</td>
+                    <td>25</td>
+                    <td>1280x720</td>
+	    <td>00:35</td>
+                    <td>91</td>
+                    <td>53748</td>
+                    <td>46403</td>
+                </tr>
+
+                <tr>
+                    <td><img width="150" height="112" src="img/test/restaurant.jpg" alt="" /></td>
+                    <td>restaurant</td>
+                    <td>24</td>
+                    <td>1280x720</td>
+	    <td>00:43</td>
+                    <td>20</td>
+                    <td>12657</td>
+                    <td>12656</td>
+                </tr>
+
+                <tr>
+                    <td><img width="150" height="112" src="img/test/robbery_at_mall.jpg" alt="" /></td>
+                    <td>robbery_at_mall</td>
+                    <td>30</td>
+                    <td>1280x720</td>
+	    <td>00:29</td>
+                    <td>40</td>
+                    <td>26413</td>
+                    <td>25153</td>
+                </tr>
+
+                <tr>
+                    <td><img width="150" height="112" src="img/test/stair2.jpg" alt="" /></td>
+                    <td>stair2</td>
+                    <td>25</td>
+                    <td>640x480</td>
+	    <td>00:38</td>
+                    <td>45</td>
+                    <td>9908</td>
+                    <td>9908</td>
+                </tr>
+
+                <tr>
+                    <td><img width="150" height="112" src="img/test/subway_station.jpg" alt="" /></td>
+                    <td>subway_station</td>
+                    <td>25</td>
+                    <td>704x576</td>
+	    <td>00:56</td>
+                    <td>330</td>
+                    <td>67057</td>
+                    <td>19254</td>
+                </tr>
+
+                <tr>
+                    <td><img width="150" height="112" src="img/test/tmpfile.jpg" alt="" /></td>
+                    <td>tmpfile</td>
+                    <td>30</td>
+                    <td>1280x652</td>
+	    <td>01:15</td>
+                    <td>50</td>
+                    <td>59698</td>
+                    <td>57913</td>
+                </tr>
+
+                <tr>
+                    <td><img width="150" height="112" src="img/test/xwm.jpg" alt="" /></td>
+                    <td>xwm</td>
+                    <td>30</td>
+                    <td>1920x1080</td>
+	    <td>01:42</td>
+                    <td>174</td>
+                    <td>30363</td>
+                    <td>30434</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <h4>Download</h4>
+    <ul class="download">
+        <li><a href="" onclick="alert('To be released')">Get all data</a></li>
+        <!-- <li><a href="">Get development kit</a></li> -->
+    </ul>
+</div>
+
+<footer>
+    <a href="http://en.sjtu.edu.cn/"> <img src="./img/logo2.png" alt="" /> </a>
+    <a href="https://www.huawei.com"> <img src="./img/huawei_logo.png" alt="" /> </a>
+    <a href="http://www.pcl.edu.cn/"> <img src="./img/pcl_logo.png" alt="" style="background:#1067bf;" /> </a>
+    <a href="http://www.boyunvision.com"> <img src="./img/logo3.png" alt="" /> </a>
+</footer>
+
+<script src="./static/jquery.min.js"></script>
+<script src="./static/bootstrap.min.js"></script>
+<script src="./static/index.js"></script>
+
+
+</body></html>
